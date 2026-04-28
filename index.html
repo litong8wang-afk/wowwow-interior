@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>窩窩室內設計 · WOW Interior Design</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <circle cx="30" cy="14" r="8"/>
+            <path d="M14 42 C14 30 46 30 46 42 L46 52 L14 52 Z"/>
+            <rect x="10" y="48" width="40" height="3" rx="1.5"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-cn">窩窩室內設計</span>
+          <span class="logo-en">WOW Interior Design</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">關於我們</a></li>
+        <li><a href="#services">服務項目</a></li>
+        <li><a href="#portfolio">作品集</a></li>
+        <li><a href="#process">服務流程</a></li>
+        <li><a href="#testimonials">客戶評價</a></li>
+        <li><a href="#contact" class="nav-cta">立即諮詢</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="cover_photo.webp" alt="窩窩室內設計作品" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">15年以上設計經驗</div>
+      <h1 class="hero-title">
+        <span class="hero-title-cn">讓每個空間</span>
+        <span class="hero-title-accent">成為您的窩</span>
+      </h1>
+      <p class="hero-subtitle">
+        內政部合法設立室內裝修業<br/>
+        住宅設計 · 商業空間 · 老屋翻新
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">免費諮詢</a>
+        <a href="#portfolio" class="btn btn-outline">查看作品</a>
+      </div>
+      <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="15" data-suffix="+">15+</span>
+            <span class="stat-label">年設計經驗</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="500" data-suffix="+">500+</span>
+            <span class="stat-label">完工案例</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num" data-target="100" data-suffix="%">100%</span>
+            <span class="stat-label">合法認證</span>
+          </div>
+        </div>
+    </div>
+    <div class="hero-scroll">
+      <span>向下探索</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / BRAND STORY ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-main">
+            <img src="work_photo_arch.webp" alt="窩窩室內設計作品 - 拱門設計" />
+          </div>
+          <div class="about-img-sub">
+            <img src="work_dental_clinic.webp" alt="窩窩室內設計作品 - 商業空間" />
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label">品牌故事</div>
+          <h2 class="section-title">十五年，只做一件事<br/><em>讓空間說故事</em></h2>
+          <p class="about-text">
+            窩窩室內設計成立至今，始終相信每一個空間都有它獨特的靈魂。我們不只是設計師，更是您生活方式的傾聽者與實現者。
+          </p>
+          <p class="about-text">
+            從住宅到商業空間，從老屋翻新到全新裝修，我們以超過十五年的豐富經驗，內政部合法設立的專業資質，為每一位客戶打造屬於他們的完美居所。
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>內政部合法認證</strong>
+                <p>室內裝修業合法設立，保障您的權益</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>專業設計團隊</strong>
+                <p>資深設計師親自規劃，全程把關品質</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                </svg>
+              </div>
+              <div>
+                <strong>住宅與商業並重</strong>
+                <p>擅長住宅、診所、辦公室等多元空間</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">服務項目</div>
+        <h2 class="section-title">我們能為您做什麼</h2>
+        <p class="section-desc">從概念到完工，一站式室內設計服務，讓您的理想空間完美落地。</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-img">
+            <img src="cover_photo.webp" alt="住宅室內設計" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-content">
+            <div class="service-num">01</div>
+            <h3>住宅室內設計</h3>
+            <p>量身打造您的理想居家空間，從格局規劃到軟裝搭配，打造溫暖舒適的生活環境。</p>
+            <ul class="service-tags">
+              <li>新成屋設計</li>
+              <li>預售屋客變</li>
+              <li>全室統包</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <img src="work_dental_clinic.webp" alt="商業空間設計" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-content">
+            <div class="service-num">02</div>
+            <h3>商業空間設計</h3>
+            <p>專業規劃診所、辦公室、商業店面等空間，兼顧美觀與機能，提升品牌形象與使用效率。</p>
+            <ul class="service-tags">
+              <li>醫療診所</li>
+              <li>辦公空間</li>
+              <li>商業店面</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <img src="work_photo_arch.webp" alt="老屋翻新" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-content">
+            <div class="service-num">03</div>
+            <h3>老屋翻新改造</h3>
+            <p>賦予老屋全新生命，解決結構問題、更新管線設備，在保留記憶的同時創造嶄新風貌。</p>
+            <ul class="service-tags">
+              <li>舊屋翻修</li>
+              <li>管線更新</li>
+              <li>格局重整</li>
+            </ul>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-img">
+            <img src="work_dental_2.webp" alt="室內裝修工程" />
+            <div class="service-img-overlay"></div>
+          </div>
+          <div class="service-content">
+            <div class="service-num">04</div>
+            <h3>室內裝修工程</h3>
+            <p>自有施工團隊，嚴格把關每道工序，從木作、泥作到水電，確保工程品質與施工進度。</p>
+            <ul class="service-tags">
+              <li>木作工程</li>
+              <li>水電配置</li>
+              <li>全室統包</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">精選作品</div>
+        <h2 class="section-title">每個空間都是一個故事</h2>
+      </div>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item portfolio-large">
+        <img src="cover_photo.webp" alt="住宅設計 - 現代簡約風" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-info">
+            <span class="portfolio-tag">住宅設計</span>
+            <h3>現代簡約住宅</h3>
+            <p>高雄 · 透天住宅 · 全室設計</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="work_photo_arch.webp" alt="牙醫診所 - 拱門設計" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-info">
+            <span class="portfolio-tag">商業空間</span>
+            <h3>牙醫診所設計</h3>
+            <p>高雄 · 透天1-2F · 約20坪</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="work_dental_clinic.webp" alt="牙醫診所診療室" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-info">
+            <span class="portfolio-tag">商業空間</span>
+            <h3>診療室空間規劃</h3>
+            <p>舊屋翻修 · 機能優先</p>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <img src="work_dental_2.webp" alt="診所候診區" />
+        <div class="portfolio-overlay">
+          <div class="portfolio-info">
+            <span class="portfolio-tag">老屋翻新</span>
+            <h3>候診區設計</h3>
+            <p>溫暖木質調 · 舒適候診體驗</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-cta">
+      <a href="https://www.facebook.com/wowwowinterior" target="_blank" class="btn btn-outline-dark">
+        查看更多作品
+        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS SECTION ===== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-label">服務流程</div>
+        <h2 class="section-title">七個步驟，打造完美空間</h2>
+        <p class="section-desc">透明清晰的服務流程，讓您在每個階段都安心放心。</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>初次諮詢</h3>
+            <p>傾聽您的需求與生活習慣，找到最適合的設計方向。</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>現場丈量</h3>
+            <p>精準測量空間，為設計打下穩固基礎。</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>圖面提案與估價</h3>
+            <p>呈現初步平面規劃與設計概念，提供透明清楚的估價。</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <div class="step-content">
+            <h3>簽約確認</h3>
+            <p>確認設計內容與合作方式，建立彼此信任。</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">05</div>
+          <div class="step-content">
+            <h3>詳細圖面繪製</h3>
+            <p>製作3D模擬圖、立面圖與水電迴路圖，並與您逐一確認細節。</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">06</div>
+          <div class="step-content">
+            <h3>專業施工</h3>
+            <p>專業團隊進場施工，嚴格把關品質與進度。</p>
+          </div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">07</div>
+          <div class="step-content">
+            <h3>完工交付</h3>
+            <p>完成新家的最後呈現，安心交到您手中。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS / SOCIAL PROOF ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">客戶評價</div>
+        <h2 class="section-title">他們的窩，我們的驕傲</h2>
+        <p class="section-desc">每一個完工案例背後，都是一段真實的信任與感動。</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card featured">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            從第一次諮詢到完工交屋，窩窩的設計師全程細心溝通，把我們的想法完整實現。老屋翻新後煥然一新，鄰居都說認不出來了！
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">陳</div>
+            <div class="author-info">
+              <strong>陳小姐</strong>
+              <span>高雄 · 住宅翻新 · 35坪</span>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            診所改裝後，病患都說環境變得很舒適溫馨，不再那麼緊張了。設計師對醫療空間的動線規劃非常專業，強力推薦！
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">林</div>
+            <div class="author-info">
+              <strong>林醫師</strong>
+              <span>高雄 · 牙醫診所 · 20坪</span>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            預算有限但設計師幫我們做到最好的規劃，每個細節都考慮到了。施工品質很好，完工後住起來真的很舒服，物超所值！
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">王</div>
+            <div class="author-info">
+              <strong>王先生</strong>
+              <span>高雄 · 新成屋 · 28坪</span>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">
+            很感謝窩窩團隊的耐心，我們改了好幾次設計方案，他們都很有耐心地配合調整。最後的成果超出預期，非常滿意！
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">張</div>
+            <div class="author-info">
+              <strong>張太太</strong>
+              <span>高雄 · 透天住宅 · 全室設計</span>
+            </div>
+            <div class="testimonial-stars">★★★★★</div>
+          </div>
+        </div>
+      </div>
+      <div class="social-proof-bar">
+        <div class="proof-item">
+          <span class="proof-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </span>
+          <span>Facebook 粉絲頁</span>
+          <strong>133+ 追蹤</strong>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-icon">★</span>
+          <span>客戶滿意度</span>
+          <strong>5.0 / 5.0</strong>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-icon">🏆</span>
+          <span>完工案例</span>
+          <strong>500+ 件</strong>
+        </div>
+        <div class="proof-divider"></div>
+        <div class="proof-item">
+          <span class="proof-icon">📋</span>
+          <span>合法認證</span>
+          <strong>內政部核准</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label">聯絡我們</div>
+          <h2 class="section-title">開始您的<br/><em>理想空間之旅</em></h2>
+          <p class="contact-desc">
+            無論是住宅設計、商業空間還是老屋翻新，我們都很樂意為您提供免費的初步諮詢。請填寫右側表單，我們將在24小時內與您聯繫。
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>服務地區</strong>
+                <p>高雄市及周邊地區</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>Facebook</strong>
+                <p>facebook.com/wowwowinterior</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <strong>服務時間</strong>
+                <p>週一至週六 09:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://www.facebook.com/wowwowinterior" target="_blank" class="btn btn-primary">
+            前往 Facebook 粉絲頁
+          </a>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <h3>免費諮詢申請</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">姓名 <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">電話 <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="請輸入聯絡電話" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">電子郵件</label>
+              <input type="email" id="email" name="email" placeholder="請輸入電子郵件" />
+            </div>
+            <div class="form-group">
+              <label for="service">服務類型 <span class="required">*</span></label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>請選擇服務類型</option>
+                <option value="residential">住宅室內設計</option>
+                <option value="commercial">商業空間設計</option>
+                <option value="renovation">老屋翻新改造</option>
+                <option value="construction">室內裝修工程</option>
+                <option value="other">其他諮詢</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="area">空間坪數</label>
+                <input type="text" id="area" name="area" placeholder="例：30坪" />
+              </div>
+              <div class="form-group">
+                <label for="location">所在地區</label>
+                <input type="text" id="location" name="location" placeholder="例：高雄市" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">需求說明</label>
+              <textarea id="message" name="message" rows="4" placeholder="請簡單描述您的設計需求、預算範圍或任何想法..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              送出諮詢申請
+              <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+              </svg>
+            </button>
+            <p class="form-note">我們將在24小時內與您聯繫，歡迎透過 Facebook 私訊我們。</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <div class="success-icon">✓</div>
+            <h3>申請已送出！</h3>
+            <p>感謝您的諮詢申請，我們將在24小時內與您聯繫。</p>
+            <a href="https://www.facebook.com/wowwowinterior" target="_blank" class="btn btn-primary">前往 Facebook 粉絲頁</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <circle cx="30" cy="14" r="8"/>
+                <path d="M14 42 C14 30 46 30 46 42 L46 52 L14 52 Z"/>
+                <rect x="10" y="48" width="40" height="3" rx="1.5"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-cn">窩窩室內設計</span>
+              <span class="logo-en">WOW Interior Design</span>
+            </div>
+          </div>
+          <p class="footer-tagline">十五年以上設計經驗<br/>內政部合法設立室內裝修業</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/wowwowinterior" target="_blank" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>快速連結</h4>
+          <ul>
+            <li><a href="#about">關於我們</a></li>
+            <li><a href="#services">服務項目</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#process">服務流程</a></li>
+            <li><a href="#testimonials">客戶評價</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>服務項目</h4>
+          <ul>
+            <li>住宅室內設計</li>
+            <li>商業空間設計</li>
+            <li>老屋翻新改造</li>
+            <li>室內裝修工程</li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>聯絡資訊</h4>
+          <p>服務地區：高雄市及周邊</p>
+          <p>服務時間：週一至週六</p>
+          <p>09:00 - 18:00</p>
+          <a href="#contact" class="btn btn-outline-light">立即諮詢</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 窩窩室內設計 · WOW Interior Design. All rights reserved.</p>
+        <p>內政部合法設立室內裝修業</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
