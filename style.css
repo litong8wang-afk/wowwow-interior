@@ -923,9 +923,21 @@ ul {
   background: rgba(245,240,232,0.15);
   color: var(--color-cream);
 }
-
-.author-info {
+.contact-info {
   flex: 1;
+}
+
+.contact-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact-actions {
+    flex-direction: row;
+  }
 }
 
 .author-info strong {
