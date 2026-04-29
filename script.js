@@ -92,21 +92,40 @@ animateElements.forEach(selector => {
 const contactForm = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
-if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+function handleFormSubmit(e) {
+  e.preventDefault();
+  
+  const btn = contactForm.querySelector('button[type="submit"]');
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '送出中...';
+  btn.disabled = true;
 
-    const btn = this.querySelector('button[type="submit"]');
-    const originalText = btn.innerHTML;
-    btn.innerHTML = '送出中...';
-    btn.disabled = true;
-
-    // Simulate form submission (replace with actual API call)
-    setTimeout(() => {
+  // Submit to Formspree
+  fetch(contactForm.action, {
+    method: 'POST',
+    body: new FormData(contactForm),
+    headers: {
+      'Accept': 'application/json'
+    }
+  }).then(response => {
+    if (response.ok) {
       contactForm.style.display = 'none';
       formSuccess.style.display = 'block';
-    }, 1200);
+    } else {
+      alert('提交失敗，請稍後重試');
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }
+  }).catch(error => {
+    console.error('Error:', error);
+    alert('提交失敗，請稍後重試');
+    btn.innerHTML = originalText;
+    btn.disabled = false;
   });
+}
+
+if (contactForm) {
+  contactForm.addEventListener('submit', handleFormSubmit);
 }
 
 // ===== HERO PARALLAX =====

@@ -507,13 +507,16 @@
           </a>
         </div>
         <div class="contact-form-wrap">
-          <form class="contact-form" id="contactForm">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/xyzabjkl" method="POST" onsubmit="handleFormSubmit(event)">
             <h3>免費諮詢申請</h3>
             <div class="form-row">
               <div class="form-group">
                 <label for="name">姓名 <span class="required">*</span></label>
                 <input type="text" id="name" name="name" placeholder="請輸入您的姓名" required />
               </div>
+              <!-- Hidden field for Formspree to identify this form -->
+              <input type="hidden" name="_subject" value="新的室內設計諮詢申請" />
+              <input type="hidden" name="_captcha" value="false" />
               <div class="form-group">
                 <label for="phone">電話 <span class="required">*</span></label>
                 <input type="tel" id="phone" name="phone" placeholder="請輸入聯絡電話" required />
