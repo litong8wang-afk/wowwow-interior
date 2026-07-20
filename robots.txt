@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://litong8wang-afk.github.io/wowwow-interior/sitemap.xml
