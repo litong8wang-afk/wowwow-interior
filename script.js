@@ -140,6 +140,9 @@ if (heroImg) {
 
 // ===== COUNTER ANIMATION =====
 function animateCounter(el, target, suffix, duration = 2000) {
+  if (el.dataset.animated === 'true') return;
+  el.dataset.animated = 'true';
+
   let current = 0;
   const increment = target / (duration / 16);
   const timer = setInterval(() => {
