@@ -1312,6 +1312,18 @@ ul {
   text-decoration-color: currentColor;
 }
 
+.contact-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(166, 111, 82, 0.35);
+  text-underline-offset: 4px;
+}
+
+.contact-link:hover {
+  color: var(--color-accent);
+  text-decoration-color: currentColor;
+}
+
 .contact-item .appointment-note {
   margin-top: 3px;
   color: var(--color-charcoal);
