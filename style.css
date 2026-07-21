@@ -1310,6 +1310,32 @@ ul {
   color: rgba(245,240,232,0.35);
 }
 
+.address-link {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-color: rgba(166, 111, 82, 0.35);
+  text-underline-offset: 4px;
+}
+
+.address-link:hover {
+  color: #8f5e45;
+  text-decoration-color: currentColor;
+}
+
+.contact-item .appointment-note {
+  margin-top: 3px;
+  color: var(--color-charcoal);
+  font-size: 0.8rem;
+}
+
+.footer .address-link {
+  color: rgba(245, 240, 232, 0.72);
+}
+
+.footer .address-link:hover {
+  color: var(--color-cream);
+}
+
 /* ===== FIXED LINE CONSULTATION ===== */
 .line-float {
   position: fixed;
