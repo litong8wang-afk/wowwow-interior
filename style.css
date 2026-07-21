@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -991,6 +995,17 @@ ul {
   color: var(--color-charcoal);
 }
 
+.social-proof-bar a.proof-item:hover strong {
+  color: var(--color-accent);
+}
+
+.social-proof-note {
+  margin-top: 16px;
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 0.8rem;
+}
+
 .proof-divider {
   width: 1px;
   height: 32px;
@@ -1150,6 +1165,40 @@ ul {
   line-height: 1.6;
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.privacy-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 4px 0 18px;
+  color: var(--color-gray);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  cursor: pointer;
+}
+
+.privacy-consent input {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  accent-color: var(--color-accent);
+  flex: 0 0 auto;
+}
+
+.privacy-consent a {
+  margin: 0 3px;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* Form Success */
 .form-success {
   text-align: center;
@@ -1178,6 +1227,61 @@ ul {
 .form-success p {
   color: var(--color-gray);
   margin-bottom: 28px;
+}
+
+/* ===== PRIVACY POLICY PAGE ===== */
+.privacy-page {
+  min-height: 100vh;
+  padding: 56px 24px;
+  background: var(--color-cream);
+}
+
+.privacy-policy {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 48px clamp(24px, 6vw, 64px);
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.privacy-policy .brand-logo-image {
+  width: 240px;
+  margin-bottom: 40px;
+}
+
+.privacy-policy h1 {
+  margin-bottom: 12px;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 400;
+}
+
+.privacy-policy h2 {
+  margin: 32px 0 10px;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.privacy-policy p,
+.privacy-policy li {
+  color: var(--color-gray);
+  font-size: 0.92rem;
+  line-height: 1.9;
+}
+
+.privacy-policy ul {
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.privacy-policy .policy-updated {
+  margin-bottom: 28px;
+  font-size: 0.8rem;
+}
+
+.privacy-policy .btn {
+  margin-top: 36px;
 }
 
 /* ===== FOOTER ===== */

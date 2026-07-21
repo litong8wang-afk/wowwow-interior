@@ -12,10 +12,13 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== MOBILE NAV TOGGLE =====
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+function setMobileMenu(open) {
+  navLinks.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
+  navToggle.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
+  document.body.classList.toggle('menu-open', open);
   const spans = navToggle.querySelectorAll('span');
-  if (navLinks.classList.contains('open')) {
+  if (open) {
     spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
     spans[1].style.opacity = '0';
     spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
@@ -24,17 +27,43 @@ navToggle.addEventListener('click', () => {
     spans[1].style.opacity = '';
     spans[2].style.transform = '';
   }
+}
+
+navToggle.addEventListener('click', () => {
+  setMobileMenu(!navLinks.classList.contains('open'));
 });
 
 // Close mobile nav when link is clicked
 navLinks.querySelectorAll('a').forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    const spans = navToggle.querySelectorAll('span');
-    spans[0].style.transform = '';
-    spans[1].style.opacity = '';
-    spans[2].style.transform = '';
+    setMobileMenu(false);
   });
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+    setMobileMenu(false);
+    navToggle.focus();
+  }
+});
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 768 && navLinks.classList.contains('open')) {
+    setMobileMenu(false);
+  }
+});
+
+// ===== PRIVACY-SAFE CONVERSION EVENTS =====
+function trackConversion(eventName) {
+  if (!eventName) return;
+  window.dispatchEvent(new CustomEvent('wow:conversion', { detail: { event: eventName } }));
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName);
+  }
+}
+
+document.querySelectorAll('[data-track]').forEach(element => {
+  element.addEventListener('click', () => trackConversion(element.dataset.track));
 });
 
 // ===== SMOOTH SCROLL =====
@@ -109,6 +138,7 @@ function handleFormSubmit(e) {
     }
   }).then(response => {
     if (response.ok) {
+      trackConversion('form_submit_success');
       contactForm.style.display = 'none';
       formSuccess.style.display = 'block';
     } else {
