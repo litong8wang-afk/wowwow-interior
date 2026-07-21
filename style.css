@@ -228,23 +228,23 @@ ul {
 .nav-logo {
   display: flex;
   align-items: center;
-  padding: 7px 12px;
-  background: rgba(250, 250, 247, 0.94);
-  border: 1px solid rgba(255, 255, 255, 0.32);
-  border-radius: var(--radius);
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  padding: 4px 0;
   transition: var(--transition);
 }
 
 .navbar.scrolled .nav-logo {
-  background: transparent;
-  border-color: transparent;
-  box-shadow: none;
+  padding: 2px 0;
 }
 
 .nav-logo .brand-logo-image {
   width: 210px;
   height: auto;
+  filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.32));
+  transition: var(--transition-fast);
+}
+
+.navbar.scrolled .nav-logo .brand-logo-image {
+  filter: none;
 }
 
 .nav-links {
@@ -1421,7 +1421,7 @@ ul {
     color: var(--color-white) !important;
   }
   .nav-toggle { display: flex; z-index: 1001; }
-  .nav-logo { padding: 6px 9px; }
+  .nav-logo { padding: 3px 0; }
   .nav-logo .brand-logo-image { width: 175px; }
 
   .hero-title { font-size: clamp(2.5rem, 10vw, 4rem); }
